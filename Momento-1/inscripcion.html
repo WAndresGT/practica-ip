@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscripcion al evento</title>
+    <link rel="icon" type="image/x-icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROjtxYVK-D5BIXNd_5yyDws-CD6pN43OUZ1gC0yOU8OlY8YAKQicN6Ic8&s=10">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="./evento.html">Volver al congreso</a></li>
+        </ul>
+
+    </nav>
+    <header>
+        <h1>inscripcion al congreso</h1>
+    </header>
+    <main>
+        <form action="" onsubmit="alert('¡Gracias por tu inscripción!'); this.reset(); return false;" method="post">
+            <label for="name">Nombre : </label>
+            <input type="text" id="name" required>
+            <br><br>
+            <label for="lastname">Apellido :</label>
+            <input type="text" id="lastname" required>
+            <br><br>
+            <label for="age">Edad :</label>
+            <input type="number" min="18" id="age" required>
+            <br><br>
+            <label for="">Ciudad : </label>
+            <select name="ciudad" id="country" required>
+                <option value="" disabled selected> seleccione una opcion</option>
+                <option value="medellin"> Medellin</option>
+                <option value="bogota">Bogota</option>
+                <option value="cali">Cali</option>
+                <option value="cartagena">Cartagena</option>
+                <option value="manizales">Manizales</option>
+                <option value="otra">Otra</option>
+            </select>
+            <br><br>
+             <label for="otra">Otra :</label>
+            <input type="text" id="otra" placeholder="Escribela aqui" >
+            
+            <p>Seleccione :</p>
+            <input type="radio" id="profesor" name="profesion" value="profe">
+            <label for="profesor">Profesor</label>
+
+            <input type="radio" id="estudiante" name="prefesion"
+            value="estud">
+            <label for="estudiante">Estudiante</label>
+            <br><br>
+
+            <label for="alimentos">Restricciones alimenticias:</label><br>
+            <textarea id="alimentos" name="alimentos" rows="5" cols="25"  placeholder="Escribe aquí..."></textarea>
+
+            <p><a href="https://cesde.edu.co/nosotros/calidad/" target="_blank">Ver politicas y condiciones</a></p>
+            <input type="checkbox" id="poli_condi" name="politicas" value="poli" required />
+            <label for="interes_css">Aceptar politicas</label>
+            <br><br>
+            <button type="submit">Enviar</button>
+            <button type="reset">Borrar</button>
+        </form>
+    </main>
+    <br><br>
+    <hr>
+    <footer>
+            <p>
+            Congreso de Tecnología 2026
+            Bello, Colombia · 25 y 26 de agosto.
+            Para más información, contáctanos a través de nuestros canales oficiales.
+            © 2026 Congreso de Tecnología. Todos los derechos reservados.
+        </p>
+    </footer>
+</body>
+</html>
